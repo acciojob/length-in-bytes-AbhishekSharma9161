@@ -3,6 +3,7 @@ function byteSize(str) {
   return new Blob([str]).size;
 }
 
+module.exports = byteSize;
 // Test cases
 console.log(byteSize('hello world')); // 11
 console.log(byteSize('안녕하세요'));     // 15
