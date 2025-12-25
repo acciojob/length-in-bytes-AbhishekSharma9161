@@ -1,7 +1,6 @@
 // Function to calculate byte size of a string
 function byteSize(str) {
-  return new Blob([str]).size;
-}
+return Buffer.byteLength(str, 'utf8');}
 
 module.exports = byteSize;
 // Test cases
